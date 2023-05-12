@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "title":"React",
+        "description":"Learn React",
+        "level":"Beginner"
+    },
+    {
+        "id":2,
+        "title":"HTML",
+        "description":"Learn HTML",
+        "level":"Beginner"
+    },
+    {
+        "id":3,
+        "title":"Next",
+        "description":"Learn Next",
+        "level":"Beginner"
+    }
+]
