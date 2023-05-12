@@ -1,16 +1,9 @@
 import Link from "next/link";
 
-async function fetchCourses() {
-  const response = await fetch("http://localhost:3000/api/courses");
-  const courses = await response.json();
-  return courses;
-}
-
-const Courses = async () => {
-  const courses = await fetchCourses();
+const Courses = ({courses}) => {
   return (
     <>
-      <div className="courses grid grid-cols-3 place-items-center w-full m-auto items-center text-center justify-center">
+      <div className="courses grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center w-full m-auto items-center text-center justify-center">
         {courses.map((course) => (
           <div
             key={course.id}

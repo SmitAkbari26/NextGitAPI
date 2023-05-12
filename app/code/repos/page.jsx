@@ -23,7 +23,7 @@ const ReposPage = async () => {
     <>
       <h2 className="text-center font-semibold text-2xl">Repository</h2>
 
-      <ul className="grid grid-cols-4 gap-4 w-full m-auto items-center text-center place-items-center justify-center">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full m-auto items-center text-center place-items-center justify-center">
         {repos.map((repo) => (
           <Link href={`/code/repos/${repo.name}`}>
             <li
